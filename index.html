@@ -13,30 +13,18 @@
             line-height: 1.5; /* Set line spacing to 1.5 */
         }
 
-        .header {
-            text-align: left; /* Align headers to the left */
-            margin-bottom: 20px;
-        }
-
-        /* Styling for all headers */
-        .line, h3 {
+        .line {
             font-size: 1.1em;
             margin: 0 0 5px;
             padding: 5px 0;
             line-height: 1.0;
         }
 
-        /* Normal weight for the line class */
-        .line {
-            font-weight: normal;
-        }
-
-        /* Make the third header bold */
-        .header .line3 {
+        .line3 {
             font-weight: bold;
         }
 
-        .header hr {
+        .intro hr {
             border: 0;
             border-top: 1px solid #000;
             margin: 10px 0;
@@ -46,22 +34,24 @@
             margin-top: 20px;
         }
 
-        /* Styling for indent levels */
         .indent-1 {
             margin-left: 50px;
         }
+
         .indent-2 {
             margin-left: 100px;
         }
+
         .indent-3 {
             margin-left: 150px;
         }
 
-        .section a {
+        .section a, .attachments a {
             color: #0066cc;
             text-decoration: none;
         }
-        .section a:hover {
+
+        .section a:hover, .attachments a:hover {
             text-decoration: underline;
         }
 
@@ -69,24 +59,27 @@
             list-style-type: square;
         }
 
-        .attachments a {
-            color: #0066cc;
-            text-decoration: none;
+        /* Change the font of <h1> to match the professor name's style */
+        h1 {
+            font-family: Arial, sans-serif;  /* Same as the body */
+            font-size: 1.5em;  /* Adjust the size as needed */
+            font-weight: normal; /* Same weight as the body */
         }
 
-        .attachments a:hover {
-            text-decoration: underline;
+        /* Style for <h1> (previously <h2>) */
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 1.25em; /* Adjust size as needed */
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <div class="line">Course Name: [Your Course Name]</div>
-        <div class="line">Course Abbreviation: [Course Abbreviation]</div>
-        <hr>
-        <div class="line line3">Professor: [Professor's Name]</div>
-    </div>
+    <span class="line">Course Name: [Your Course Name]</span><br>
+    <span class="line">Course Abbreviation: [Course Abbreviation]</span><br>
+    <hr>
+    <h1 class="line3">Professor: [Professor's Name]</h1> <!-- Professor's name in <h1> -->
 
     <div class="paragraph">
         <p>Your document content will go here. You can add text, images, or other HTML elements below this section.</p>
@@ -94,25 +87,8 @@
 
 <!-- Section 1 -->
     <div class="section">
-        <h4>Section 1: [Section Title]</h4>
+        <h1>Section 1: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -122,25 +98,8 @@
 
     <!-- Section 2 -->
     <div class="section">
-        <h4>Section 2: [Section Title]</h4>
+        <h1>Section 2: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -150,25 +109,8 @@
 
     <!-- Section 3 -->
     <div class="section">
-        <h4>Section 3: [Section Title]</h4>
+        <h1>Section 3: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -178,25 +120,8 @@
 
     <!-- Section 4 -->
     <div class="section">
-        <h4>Section 4: [Section Title]</h4>
+        <h1>Section 4: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -206,25 +131,8 @@
 
     <!-- Section 5 -->
     <div class="section">
-        <h4>Section 5: [Section Title]</h4>
+        <h1>Section 5: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -234,25 +142,8 @@
 
     <!-- Section 6 -->
     <div class="section">
-        <h4>Section 6: [Section Title]</h4>
+        <h1>Section 6: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -262,25 +153,8 @@
 
     <!-- Section 7 -->
     <div class="section">
-        <h4>Section 7: [Section Title]</h4>
+        <h1>Section 7: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -290,25 +164,8 @@
 
     <!-- Section 8 -->
     <div class="section">
-        <h4>Section 8: [Section Title]</h4>
+        <h1>Section 8: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -318,25 +175,8 @@
 
     <!-- Section 9 -->
     <div class="section">
-        <h4>Section 9: [Section Title]</h4>
+        <h1>Section 9: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -346,25 +186,8 @@
 
     <!-- Section 10 -->
     <div class="section">
-        <h4>Section 10: [Section Title]</h4>
+        <h1>Section 10: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -374,25 +197,8 @@
 
     <!-- Section 11 -->
     <div class="section">
-        <h4>Section 11: [Section Title]</h4>
+        <h1>Section 11: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -402,25 +208,8 @@
 
     <!-- Section 12 -->
     <div class="section">
-        <h4>Section 12: [Section Title]</h4>
+        <h1>Section 12: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -430,25 +219,8 @@
 
     <!-- Section 13 -->
     <div class="section">
-        <h4>Section 13: [Section Title]</h4>
+        <h1>Section 13: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -458,25 +230,8 @@
 
     <!-- Section 14 -->
     <div class="section">
-        <h4>Section 14: [Section Title]</h4>
+        <h1>Section 14: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -486,25 +241,8 @@
 
     <!-- Section 15 -->
     <div class="section">
-        <h4>Section 15: [Section Title]</h4>
+        <h1>Section 15: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -514,25 +252,8 @@
 
     <!-- Section 16 -->
     <div class="section">
-        <h4>Section 16: [Section Title]</h4>
+        <h1>Section 16: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -542,25 +263,8 @@
 
     <!-- Section 17 -->
     <div class="section">
-        <h4>Section 17: [Section Title]</h4>
+        <h1>Section 17: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -570,25 +274,8 @@
 
     <!-- Section 18 -->
     <div class="section">
-        <h4>Section 18: [Section Title]</h4>
+        <h1>Section 18: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -598,25 +285,8 @@
 
     <!-- Section 19 -->
     <div class="section">
-        <h4>Section 19: [Section Title]</h4>
+        <h1>Section 19: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -626,25 +296,8 @@
 
     <!-- Section 20 -->
     <div class="section">
-        <h4>Section 20: [Section Title]</h4>
+        <h1>Section 20: [Section Title]</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
-            <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
             <li>Bullet point</li>
@@ -652,9 +305,9 @@
         <a href="https://www.google.com" target="_blank">Learn More</a>
     </div>
 
-        <!-- Attachment Section -->
+    <!-- Attachment Section -->
     <div class="attachments">
-        <h4>Attachments:</h4>
+        <h1>Attachments:</h1> <!-- Changed from <h2> to <h1> -->
         <ul>
             <li><a href="Attachment 1.pdf" target="_blank">Attachment 1.pdf</a></li>
             <li><a href="Attachment 2.pdf" target="_blank">Attachment 2.pdf</a></li>
