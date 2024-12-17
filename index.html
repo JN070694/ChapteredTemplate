@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generic Template</title>
+    <title>Chaptered Template</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,13 +11,14 @@
             background-color: #fdf4e3; /* Slightly off-white (yellowish) background */
             color: #000000; /* Black text */
             line-height: 1.5; /* Set line spacing to 1.5 */
+            font-size: 1em; /* Set the body font size to the default */
         }
 
         .intro {
-            font-size: 1.1em;
+            font-size: inherit; /* Inherit font size from body */
             margin: 0 0 5px;
-            padding: 5px 0;
-            line-height: 1.0;
+            padding: 0; /* Remove extra padding */
+            line-height: normal; /* Use normal line height */
         }
 
         .chapter {
@@ -49,18 +50,11 @@
             list-style-type: square;
         }
 
-        /* Change the font of <h1> to match the professor name's style */
+        /* Style for h1 to inherit font size from body */
         h1 {
             font-family: Arial, sans-serif;  /* Same as the body */
-            font-size: 1.5em;  /* Adjust the size as needed */
+            font-size: inherit; /* Inherit font size from body */
             font-weight: normal; /* Same weight as the body */
-        }
-
-        /* Style for <h1> (previously <h2>) */
-        h1 {
-            font-family: Arial, sans-serif;
-            font-size: 1.25em; /* Adjust size as needed */
-            font-weight: bold;
         }
     </style>
 </head>
@@ -75,7 +69,7 @@
         <p>Your document content will go here. You can add text, images, or other HTML elements below this chapter.</p>
     </div>
 
-<!-- Chapter 1 -->
+    <!-- Chapter 1 -->
     <div class="chapter">
         <h1>Chapter 1: [Chapter Title]</h1>
         <ul>
@@ -294,6 +288,8 @@
         </ul>
         <a href="https://www.google.com" target="_blank">Learn More</a>
     </div>
+
+    <hr>
 
     <!-- Attachment Section -->
     <div class="attachments">
