@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaptered Template</title>
     <style>
+        /* Reset margin and padding for the whole document */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Keep default or custom margin and padding for bullet points */
+        ul, li {
+            margin-left: 20px; /* Or set your preferred spacing */
+            padding-left: 20px;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -14,14 +25,14 @@
             font-size: 1em; /* Set the body font size to the default */
         }
 
-        .intro {
+        .summary {
             font-size: inherit; /* Inherit font size from body */
             margin: 0 0 5px;
             padding: 0; /* Remove extra padding */
             line-height: normal; /* Use normal line height */
         }
 
-        .chapter {
+        .chapter, .intro {
             margin-top: 20px;
         }
 
@@ -46,10 +57,6 @@
             text-decoration: underline;
         }
 
-        .attachments ul {
-            list-style-type: square;
-        }
-
         /* Style for h1 to inherit font size from body */
         h1 {
             font-family: Arial, sans-serif;  /* Same as the body */
@@ -60,13 +67,19 @@
 </head>
 <body>
 
-    <span class="intro">Course Name: [Your Course Name]</span><br>
-    <span class="intro">Course Abbreviation: [Course Abbreviation]</span><br>
+    <span class="summary">Course Name: [Your Course Name]</span><br>
+    <span class="summary">Course Abbreviation: [Course Abbreviation]</span><br>
     <hr>
-    <span class="intro">Professor: [Professor's Name]</span><br>
 
-    <div class="paragraph">
-        <p>Your document content will go here. You can add text, images, or other HTML elements below this chapter.</p>
+    <div class="intro">
+        <h1>Introduction: [Intro Title]</h1>
+        <p>This is the introduction section. You can add an overview or background information here.</p>
+        <ul>
+            <li>Bullet point</li>
+            <li>Bullet point</li>
+            <li>Bullet point</li>
+        </ul>
+        <a href="https://www.example.com" target="_blank">Learn More</a>
     </div>
 
     <!-- Chapter 1 -->
@@ -290,31 +303,32 @@
     </div>
 
     <hr>
+    <br>
 
     <!-- Attachment Section -->
     <div class="attachments">
         <h1>Attachments:</h1>
         <ul>
-            <li><a href="Attachment 1.pdf" target="_blank">Attachment 1.pdf</a></li>
-            <li><a href="Attachment 2.pdf" target="_blank">Attachment 2.pdf</a></li>
-            <li><a href="Attachment 3.pdf" target="_blank">Attachment 3.pdf</a></li>
-            <li><a href="Attachment 4.pdf" target="_blank">Attachment 4.pdf</a></li>
-            <li><a href="Attachment 5.pdf" target="_blank">Attachment 5.pdf</a></li>
-            <li><a href="Attachment 6.pdf" target="_blank">Attachment 6.pdf</a></li>
-            <li><a href="Attachment 7.pdf" target="_blank">Attachment 7.pdf</a></li>
-            <li><a href="Attachment 8.pdf" target="_blank">Attachment 8.pdf</a></li>
-            <li><a href="Attachment 9.pdf" target="_blank">Attachment 9.pdf</a></li>
-            <li><a href="Attachment 10.pdf" target="_blank">Attachment 10.pdf</a></li>
-            <li><a href="Attachment 11.pdf" target="_blank">Attachment 11.pdf</a></li>
-            <li><a href="Attachment 12.pdf" target="_blank">Attachment 12.pdf</a></li>
-            <li><a href="Attachment 13.pdf" target="_blank">Attachment 13.pdf</a></li>
-            <li><a href="Attachment 14.pdf" target="_blank">Attachment 14.pdf</a></li>
-            <li><a href="Attachment 15.pdf" target="_blank">Attachment 15.pdf</a></li>
-            <li><a href="Attachment 16.pdf" target="_blank">Attachment 16.pdf</a></li>
-            <li><a href="Attachment 17.pdf" target="_blank">Attachment 17.pdf</a></li>
-            <li><a href="Attachment 18.pdf" target="_blank">Attachment 18.pdf</a></li>
-            <li><a href="Attachment 19.pdf" target="_blank">Attachment 19.pdf</a></li>
-            <li><a href="Attachment 20.pdf" target="_blank">Attachment 20.pdf</a></li>
+            <li><a href="Attachment_1.pdf" target="_blank">Attachment 1.pdf</a></li>
+            <li><a href="Attachment_2.pdf" target="_blank">Attachment 2.pdf</a></li>
+            <li><a href="Attachment_3.pdf" target="_blank">Attachment 3.pdf</a></li>
+            <li><a href="Attachment_4.pdf" target="_blank">Attachment 4.pdf</a></li>
+            <li><a href="Attachment_5.pdf" target="_blank">Attachment 5.pdf</a></li>
+            <li><a href="Attachment_6.pdf" target="_blank">Attachment 6.pdf</a></li>
+            <li><a href="Attachment_7.pdf" target="_blank">Attachment 7.pdf</a></li>
+            <li><a href="Attachment_8.pdf" target="_blank">Attachment 8.pdf</a></li>
+            <li><a href="Attachment_9.pdf" target="_blank">Attachment 9.pdf</a></li>
+            <li><a href="Attachment_10.pdf" target="_blank">Attachment 10.pdf</a></li>
+            <li><a href="Attachment_11.pdf" target="_blank">Attachment 11.pdf</a></li>
+            <li><a href="Attachment_12.pdf" target="_blank">Attachment 12.pdf</a></li>
+            <li><a href="Attachment_13.pdf" target="_blank">Attachment 13.pdf</a></li>
+            <li><a href="Attachment_14.pdf" target="_blank">Attachment 14.pdf</a></li>
+            <li><a href="Attachment_15.pdf" target="_blank">Attachment 15.pdf</a></li>
+            <li><a href="Attachment_16.pdf" target="_blank">Attachment 16.pdf</a></li>
+            <li><a href="Attachment_17.pdf" target="_blank">Attachment 17.pdf</a></li>
+            <li><a href="Attachment_18.pdf" target="_blank">Attachment 18.pdf</a></li>
+            <li><a href="Attachment_19.pdf" target="_blank">Attachment 19.pdf</a></li>
+            <li><a href="Attachment_20.pdf" target="_blank">Attachment 20.pdf</a></li>
         </ul>
     </div>
 
