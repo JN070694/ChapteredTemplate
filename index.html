@@ -25,14 +25,14 @@
             font-size: 1em; /* Set the body font size to the default */
         }
 
-        .summary {
+        .subject {
             font-size: inherit; /* Inherit font size from body */
             margin: 0 0 5px;
             padding: 0; /* Remove extra padding */
             line-height: normal; /* Use normal line height */
         }
 
-        .chapter, .intro {
+        .intro, .chapter, .notes {
             margin-top: 20px;
         }
 
@@ -48,12 +48,12 @@
             margin-left: 150px;
         }
 
-        .chapter a, .attachments a {
+        .intro a, .chapter a, .notes a, .attachments a {
             color: #0066cc;
             text-decoration: none;
         }
 
-        .chapter a:hover, .attachments a:hover {
+        .intro a:hover, .chapter a:hover, .notes a:hover, .attachments a:hover {
             text-decoration: underline;
         }
 
@@ -67,8 +67,8 @@
 </head>
 <body>
 
-    <span class="summary">Course Name: [Your Course Name]</span><br>
-    <span class="summary">Course Abbreviation: [Course Abbreviation]</span><br>
+    <span class="subject">Course Name: [Your Course Name]</span><br>
+    <span class="subject">Course Abbreviation: [Course Abbreviation]</span><br>
     <hr>
 
     <div class="intro">
@@ -294,6 +294,17 @@
     <!-- Chapter 20 -->
     <div class="chapter">
         <h1>Chapter 20: [Chapter Title]</h1>
+        <ul>
+            <li>Bullet point</li>
+            <li>Bullet point</li>
+            <li>Bullet point</li>
+        </ul>
+        <a href="https://www.google.com" target="_blank">Learn More</a>
+    </div>
+
+    <div class="notes">
+        <h1>Notes: [Note Title]</h1>
+        <p>This is the notes section. You can add additional overview or background information here.</p>
         <ul>
             <li>Bullet point</li>
             <li>Bullet point</li>
